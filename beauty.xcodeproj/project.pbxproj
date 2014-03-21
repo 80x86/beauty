@@ -27,6 +27,12 @@
 		FB47EA4818DAE6C4006929CB /* StoreTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB47EA4718DAE6C4006929CB /* StoreTableViewController.m */; };
 		FB47EA4A18DAE6CE006929CB /* Store.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB47EA4918DAE6CE006929CB /* Store.storyboard */; };
 		FB47EA4D18DAE6DF006929CB /* StoreFacade.m in Sources */ = {isa = PBXBuildFile; fileRef = FB47EA4C18DAE6DF006929CB /* StoreFacade.m */; };
+		FB47EA5118DBD777006929CB /* SearchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB47EA5018DBD777006929CB /* SearchTableViewController.m */; };
+		FB47EA5318DBD792006929CB /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB47EA5218DBD792006929CB /* Search.storyboard */; };
+		FB47EA5818DBD7B8006929CB /* SearchFacade.m in Sources */ = {isa = PBXBuildFile; fileRef = FB47EA5718DBD7B8006929CB /* SearchFacade.m */; };
+		FB47EA5B18DBDEB7006929CB /* CartTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB47EA5A18DBDEB7006929CB /* CartTableViewController.m */; };
+		FB47EA5D18DBDEC4006929CB /* Cart.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB47EA5C18DBDEC4006929CB /* Cart.storyboard */; };
+		FB47EA6018DBDEED006929CB /* CartFacade.m in Sources */ = {isa = PBXBuildFile; fileRef = FB47EA5F18DBDEED006929CB /* CartFacade.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +75,16 @@
 		FB47EA4918DAE6CE006929CB /* Store.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Store.storyboard; sourceTree = "<group>"; };
 		FB47EA4B18DAE6DF006929CB /* StoreFacade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoreFacade.h; sourceTree = "<group>"; };
 		FB47EA4C18DAE6DF006929CB /* StoreFacade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoreFacade.m; sourceTree = "<group>"; };
+		FB47EA4F18DBD777006929CB /* SearchTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchTableViewController.h; sourceTree = "<group>"; };
+		FB47EA5018DBD777006929CB /* SearchTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchTableViewController.m; sourceTree = "<group>"; };
+		FB47EA5218DBD792006929CB /* Search.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
+		FB47EA5618DBD7B8006929CB /* SearchFacade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchFacade.h; sourceTree = "<group>"; };
+		FB47EA5718DBD7B8006929CB /* SearchFacade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchFacade.m; sourceTree = "<group>"; };
+		FB47EA5918DBDEB7006929CB /* CartTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartTableViewController.h; sourceTree = "<group>"; };
+		FB47EA5A18DBDEB7006929CB /* CartTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartTableViewController.m; sourceTree = "<group>"; };
+		FB47EA5C18DBDEC4006929CB /* Cart.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Cart.storyboard; sourceTree = "<group>"; };
+		FB47EA5E18DBDEED006929CB /* CartFacade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartFacade.h; sourceTree = "<group>"; };
+		FB47EA5F18DBDEED006929CB /* CartFacade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartFacade.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +144,7 @@
 		FB47E9F518DADFCF006929CB /* beauty */ = {
 			isa = PBXGroup;
 			children = (
+				FB47EA4E18DBD367006929CB /* Common */,
 				FB47EA3218DAE3B8006929CB /* AddressManager */,
 				FB47EA3318DAE3B8006929CB /* ArticleDetail */,
 				FB47EA3418DAE3B8006929CB /* ArticleList */,
@@ -209,6 +226,11 @@
 		FB47EA3518DAE3B8006929CB /* Cart */ = {
 			isa = PBXGroup;
 			children = (
+				FB47EA5E18DBDEED006929CB /* CartFacade.h */,
+				FB47EA5F18DBDEED006929CB /* CartFacade.m */,
+				FB47EA5918DBDEB7006929CB /* CartTableViewController.h */,
+				FB47EA5A18DBDEB7006929CB /* CartTableViewController.m */,
+				FB47EA5C18DBDEC4006929CB /* Cart.storyboard */,
 			);
 			path = Cart;
 			sourceTree = "<group>";
@@ -242,6 +264,11 @@
 		FB47EA3918DAE3B8006929CB /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				FB47EA5618DBD7B8006929CB /* SearchFacade.h */,
+				FB47EA5718DBD7B8006929CB /* SearchFacade.m */,
+				FB47EA4F18DBD777006929CB /* SearchTableViewController.h */,
+				FB47EA5018DBD777006929CB /* SearchTableViewController.m */,
+				FB47EA5218DBD792006929CB /* Search.storyboard */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -256,6 +283,13 @@
 				FB47EA4918DAE6CE006929CB /* Store.storyboard */,
 			);
 			path = Store;
+			sourceTree = "<group>";
+		};
+		FB47EA4E18DBD367006929CB /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -338,7 +372,9 @@
 				FB47E9FA18DADFCF006929CB /* InfoPlist.strings in Resources */,
 				FB47EA4A18DAE6CE006929CB /* Store.storyboard in Resources */,
 				FB47EA3F18DAE3F3006929CB /* Personal.storyboard in Resources */,
+				FB47EA5318DBD792006929CB /* Search.storyboard in Resources */,
 				FB47EA0318DADFCF006929CB /* Main.storyboard in Resources */,
+				FB47EA5D18DBDEC4006929CB /* Cart.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,11 +395,15 @@
 			files = (
 				FB47EA0018DADFCF006929CB /* AppDelegate.m in Sources */,
 				FB47EA4518DAE62B006929CB /* HomeTableViewController.m in Sources */,
+				FB47EA6018DBDEED006929CB /* CartFacade.m in Sources */,
+				FB47EA5818DBD7B8006929CB /* SearchFacade.m in Sources */,
 				FB47E9FC18DADFCF006929CB /* main.m in Sources */,
+				FB47EA5118DBD777006929CB /* SearchTableViewController.m in Sources */,
 				FB47EA4218DAE515006929CB /* PersonalCenterFacade.m in Sources */,
 				FB47EA4D18DAE6DF006929CB /* StoreFacade.m in Sources */,
 				FB47EA3D18DAE3DE006929CB /* PersonalTableViewController.m in Sources */,
 				FB47EA4818DAE6C4006929CB /* StoreTableViewController.m in Sources */,
+				FB47EA5B18DBDEB7006929CB /* CartTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

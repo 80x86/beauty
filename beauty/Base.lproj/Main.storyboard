@@ -22,7 +22,7 @@
             </objects>
             <point key="canvasLocation" x="-546" y="72"/>
         </scene>
-        <!--Home Table View Controller-->
+        <!--Home Table View Controller - 美人计-->
         <scene sceneID="dXg-KG-R1y">
             <objects>
                 <tableViewController id="E8j-7h-DUs" customClass="HomeTableViewController" sceneMemberID="viewController">
@@ -45,7 +45,7 @@
                             <outlet property="delegate" destination="E8j-7h-DUs" id="1V5-PU-uoc"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="Ne5-Rw-kkg"/>
+                    <navigationItem key="navigationItem" title="美人计" id="Ne5-Rw-kkg"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Id8-cn-Dqz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -60,6 +60,10 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ldb-wA-33b">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.1843137255" green="0.70980392160000005" blue="0.72549019609999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

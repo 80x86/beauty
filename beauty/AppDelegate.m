@@ -10,6 +10,53 @@
 
 @implementation AppDelegate
 
+- (void)searchButtonPressed:(UIButton *)sender
+{
+    NSLog(@"searchButtonPressed...");
+    
+    UIViewController *controller = [SearchFacade instantiateInitialViewController];
+    
+    UITabBarController *tabBarController = (UITabBarController *)self.window.rootViewController;
+    UINavigationController *navController = tabBarController.viewControllers[sender.tag];
+    
+    [navController pushViewController:controller animated:YES];
+}
+- (void)addSearchButtonForViewController:(UIViewController *)navController withTag:(NSInteger)tag
+{
+    UIViewController *controller = [(UINavigationController *)navController viewControllers][0];
+    UIButton *searchButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [searchButton setImage:[UIImage imageNamed:@"first"] forState:UIControlStateNormal];
+    searchButton.frame = CGRectMake(0, 0, 30, 30);
+    searchButton.tag = tag;
+    [searchButton addTarget:self action:@selector(searchButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
+    
+    UIBarButtonItem *buttonItem = [[UIBarButtonItem alloc] initWithCustomView:searchButton];
+    controller.navigationItem.leftBarButtonItem = buttonItem;
+}
+
+- (void)cartButtonPressed:(UIButton *)sender
+{
+    
+    UIViewController *controller = [CartFacade instantiateInitialViewController];
+    
+    UITabBarController *tabBarController = (UITabBarController *)self.window.rootViewController;
+    UINavigationController *navController = tabBarController.viewControllers[sender.tag];
+    
+    [navController pushViewController:controller animated:YES];
+}
+- (void)addCartButtonForViewController:(UIViewController *)navController withTag:(NSInteger)tag
+{
+    UIViewController *controller = [(UINavigationController *)navController viewControllers][0];
+    UIButton *cartButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [cartButton setImage:[UIImage imageNamed:@"second"] forState:UIControlStateNormal];
+    cartButton.frame = CGRectMake(0, 0, 30, 30);
+    cartButton.tag = tag;
+    [cartButton addTarget:self action:@selector(cartButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
+    
+    UIBarButtonItem *buttonItem = [[UIBarButtonItem alloc] initWithCustomView:cartButton];
+    controller.navigationItem.rightBarButtonItem = buttonItem;
+}
+
 - (void)setupTheTabBarViewController
 {
     UITabBarController *tabBarController = (UITabBarController *)self.window.rootViewController;
@@ -32,6 +79,15 @@
     [tabBarController.viewControllers[2] tabBarItem].title = @"商城";
     
     
+    // add Search Button
+    [self addSearchButtonForViewController:tabBarController.viewControllers[0] withTag:0];
+    [self addSearchButtonForViewController:tabBarController.viewControllers[1] withTag:1];
+    [self addSearchButtonForViewController:tabBarController.viewControllers[2] withTag:2];
+    
+    // add Cart Button
+    [self addCartButtonForViewController:tabBarController.viewControllers[0] withTag:0];
+    [self addCartButtonForViewController:tabBarController.viewControllers[1] withTag:1];
+    [self addCartButtonForViewController:tabBarController.viewControllers[2] withTag:2];
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
