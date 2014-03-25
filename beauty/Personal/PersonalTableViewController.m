@@ -54,6 +54,10 @@
 - (IBAction)loginButtonPressed:(id)sender {
     [LoginFacade presentTheLoginPageFrom:self success:^(BOOL success) {
         NSLog(@"--- %d", success);
+        if (success) {
+            UIViewController *controller = [OrderFacade instantiateInitialViewController];
+            [self.navigationController pushViewController:controller animated:YES];
+        }
     }];
 }
 

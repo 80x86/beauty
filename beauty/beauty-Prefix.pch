@@ -24,4 +24,6 @@
 #import "OrderFacade.h"
 #import "Userinfo.h"
 #import "LoginFacade.h"
+#import "ProductFacade.h"
+#import "AddressFacade.h"
 #endif

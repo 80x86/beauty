@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MYIntroductionView.h"
 
 @interface HomeTableViewController : UITableViewController
 

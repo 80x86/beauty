@@ -9,6 +9,7 @@
 #import "HomeTableViewController.h"
 #import "MKNumberBadgeView.h"
 
+
 @interface HomeTableViewController ()
 
 @end
@@ -55,6 +56,40 @@
     
     [self.navigationController.navigationBar addSubview:numberBadge];
     
+//    [self showIntroPage];
+    
+}
+
+- (void)showIntroPage
+{
+    //STEP 1 Construct Panels
+    MYIntroductionPanel *panel = [[MYIntroductionPanel alloc] initWithimage:[UIImage imageNamed:@"SampleImage1"] title:@"Sample Title" description:@"Welcome to MYIntroductionView, your 100 percent customizable interface for introductions and tutorials! Simply add a few classes to your project, and you are ready to go!" ];
+    
+    //You may also add in a title for each panel
+    MYIntroductionPanel *panel2 = [[MYIntroductionPanel alloc] initWithimage:[UIImage imageNamed:@"SampleImage2"] title:@"Your Ticket!" description:@"MYIntroductionView is your ticket to a great tutorial or introduction!"];
+    
+    MYIntroductionPanel *panel3 = [[MYIntroductionPanel alloc] initWithimage:[UIImage imageNamed:@"SampleImage2"] title:@"Your Ticket!" description:@"MYIntroductionView is your ticket to a great tutorial or introduction!"];
+    
+    
+    MYIntroductionView *introductionView = [[MYIntroductionView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) headerText:@"MYIntroductionView" panels:@[panel, panel2, panel3] languageDirection:MYLanguageDirectionLeftToRight];
+    [introductionView setBackgroundImage:[UIImage imageNamed:@"SampleBackground"]];
+    
+    [introductionView.BackgroundImageView setAutoresizingMask:UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight];
+    [introductionView.HeaderImageView setAutoresizingMask:UIViewAutoresizingFlexibleWidth];
+    [introductionView.HeaderLabel setAutoresizingMask:UIViewAutoresizingFlexibleWidth];
+    [introductionView.HeaderView setAutoresizingMask:UIViewAutoresizingFlexibleWidth];
+    [introductionView.PageControl setAutoresizingMask:UIViewAutoresizingFlexibleWidth];
+    [introductionView.SkipButton setAutoresizingMask:UIViewAutoresizingFlexibleWidth];
+    
+    
+    
+    
+    //Set delegate to self for callbacks (optional)
+    //    introductionView.delegate = self;
+    
+    
+    //STEP 3: Show introduction view
+    [introductionView showInView:self.tabBarController.view animateDuration:0.0];
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -63,6 +98,7 @@
     
     [self removeTheBadgeView];
 }
+
 
 - (void)viewDidLoad
 {
