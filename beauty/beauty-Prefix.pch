@@ -20,4 +20,8 @@
 #import "FavoriteFacade.h"
 #import "ListFacade.h"
 #import "ArticleFacade.h"
+#import "CommentFacade.h"
+#import "OrderFacade.h"
+#import "Userinfo.h"
+#import "LoginFacade.h"
 #endif

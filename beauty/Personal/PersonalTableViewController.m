@@ -41,7 +41,20 @@
         // to Favorite
         UIViewController *controller = [FavoriteFacade instantiateInitialViewController];
         [self.navigationController pushViewController:controller animated:YES];
+    }else if (indexPath.section == 0 && indexPath.row == 3) {
+        // to Comment
+        UIViewController *controller = [CommentFacade instantiateInitialViewController];
+        [self.navigationController pushViewController:controller animated:YES];
+    }else if (indexPath.section == 0 && indexPath.row == 4) {
+        // to Order
+        UIViewController *controller = [OrderFacade instantiateInitialViewController];
+        [self.navigationController pushViewController:controller animated:YES];
     }
+}
+- (IBAction)loginButtonPressed:(id)sender {
+    [LoginFacade presentTheLoginPageFrom:self success:^(BOOL success) {
+        NSLog(@"--- %d", success);
+    }];
 }
 
 - (void)didReceiveMemoryWarning
