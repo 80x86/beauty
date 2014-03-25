@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="AXY-mc-7gr">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--Article View Controller-->
+        <scene sceneID="I7C-1P-jPA">
+            <objects>
+                <viewController hidesBottomBarWhenPushed="YES" id="AXY-mc-7gr" customClass="ArticleViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pV4-RN-8Mx"/>
+                        <viewControllerLayoutGuide type="bottom" id="gWO-Nv-RSS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OWO-a2-268">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cpz-8t-e0B">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SZN-av-ZqA">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="KHf-U7-JZ7"/>
+                                    <constraint firstAttribute="width" constant="320" id="m4N-dV-xQE"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem title="Item" id="Dxh-3e-jSX"/>
+                                    <barButtonItem title="Item" id="RJ2-rz-zjK"/>
+                                    <barButtonItem title="Item" id="yv3-VS-ff9"/>
+                                    <barButtonItem title="Item" id="qfq-ER-ML9"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="SZN-av-ZqA" firstAttribute="top" secondItem="cpz-8t-e0B" secondAttribute="bottom" id="5V4-Gb-15K"/>
+                            <constraint firstAttribute="bottom" secondItem="SZN-av-ZqA" secondAttribute="bottom" id="FPw-tR-ytL"/>
+                            <constraint firstAttribute="trailing" secondItem="cpz-8t-e0B" secondAttribute="trailing" id="SdJ-bl-T5c"/>
+                            <constraint firstAttribute="centerX" secondItem="SZN-av-ZqA" secondAttribute="centerX" id="e67-ud-37A"/>
+                            <constraint firstItem="cpz-8t-e0B" firstAttribute="leading" secondItem="OWO-a2-268" secondAttribute="leading" id="kny-V0-Clk"/>
+                            <constraint firstItem="cpz-8t-e0B" firstAttribute="top" secondItem="OWO-a2-268" secondAttribute="top" id="rc5-Ve-bLg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="cpz-8t-e0B" id="YUK-92-kVj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cyv-aW-OD5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="167" y="6"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

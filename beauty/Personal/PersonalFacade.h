@@ -1,5 +1,5 @@
 //
-//  PersonalCenterFacade.h
+//  PersonalFacade.h
 //  beauty
 //
 //  Created by xiaoyuan wang on 3/20/14.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface PersonalCenterFacade : NSObject
+@interface PersonalFacade : NSObject
 
 + (UIViewController *)instantiateInitialViewController;
 

@@ -1,18 +1,18 @@
 //
-//  PersonalTableViewController.m
+//  SettingTableViewController.m
 //  beauty
 //
-//  Created by xiaoyuan wang on 3/20/14.
+//  Created by xiaoyuan wang on 3/25/14.
 //  Copyright (c) 2014 1010.am. All rights reserved.
 //
 
-#import "PersonalTableViewController.h"
+#import "SettingTableViewController.h"
 
-@interface PersonalTableViewController ()
+@interface SettingTableViewController ()
 
 @end
 
-@implementation PersonalTableViewController
+@implementation SettingTableViewController
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -38,6 +38,12 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSLog(@"%@", indexPath);
 }
 
 @end

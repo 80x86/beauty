@@ -1,27 +1,22 @@
 //
-//  CartFacade.m
+//  PersonalFacade.m
 //  beauty
 //
-//  Created by xiaoyuan wang on 3/21/14.
+//  Created by xiaoyuan wang on 3/20/14.
 //  Copyright (c) 2014 1010.am. All rights reserved.
 //
 
-#import "CartFacade.h"
+#import "PersonalFacade.h"
 
-#define STORYBOARD_NAEM @"Cart"
+#define STORYBOARD_NAEM @"Personal"
 
-@implementation CartFacade
+@implementation PersonalFacade
 
 + (UIViewController *)instantiateInitialViewController
 {
     UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:STORYBOARD_NAEM bundle:[NSBundle mainBundle]];
     
     return storyBoard.instantiateInitialViewController;
-}
-
-+ (int)numberOfProductsInCart
-{
-    return 3;
 }
 
 @end

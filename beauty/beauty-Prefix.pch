@@ -13,8 +13,11 @@
 #ifdef __OBJC__
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
-#import "PersonalCenterFacade.h"
+#import "PersonalFacade.h"
 #import "StoreFacade.h"
 #import "SearchFacade.h"
 #import "CartFacade.h"
+#import "FavoriteFacade.h"
+#import "ListFacade.h"
+#import "ArticleFacade.h"
 #endif

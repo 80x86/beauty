@@ -9,6 +9,7 @@
 #import "SearchTableViewController.h"
 
 @interface SearchTableViewController ()
+@property (weak, nonatomic) IBOutlet UISearchBar *mySearchBar;
 
 @end
 
@@ -22,6 +23,24 @@
     }
     return self;
 }
+
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    [_mySearchBar becomeFirstResponder];
+}
+
+/*
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:YES animated:animated];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [self.navigationController setNavigationBarHidden:NO animated:animated];
+}*/
 
 - (void)viewDidLoad
 {
@@ -54,6 +73,12 @@
 #warning Incomplete method implementation.
     // Return the number of rows in the section.
     return 0;
+}
+
+- (void)searchBarCancelButtonClicked:(UISearchBar *) searchBar
+{
+    [self.navigationController popViewControllerAnimated:YES];
+//    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 /*

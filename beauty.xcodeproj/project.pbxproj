@@ -7,6 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB0B63DF18E0F5F50026C708 /* Personal.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB0B63DA18E0F5F50026C708 /* Personal.storyboard */; };
+		FB0B63E018E0F5F50026C708 /* PersonalFacade.m in Sources */ = {isa = PBXBuildFile; fileRef = FB0B63DC18E0F5F50026C708 /* PersonalFacade.m */; };
+		FB0B63E118E0F5F50026C708 /* PersonalTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB0B63DE18E0F5F50026C708 /* PersonalTableViewController.m */; };
+		FB0B63EC18E0FA7F0026C708 /* SettingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB0B63EB18E0FA7F0026C708 /* SettingTableViewController.m */; };
+		FB0B63EF18E0FC520026C708 /* MsgTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB0B63EE18E0FC520026C708 /* MsgTableViewController.m */; };
+		FB0B63F218E0FD6B0026C708 /* FavoriteTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB0B63F118E0FD6B0026C708 /* FavoriteTableViewController.m */; };
+		FB0B63F818E0FD900026C708 /* FavoriteFacade.m in Sources */ = {isa = PBXBuildFile; fileRef = FB0B63F718E0FD900026C708 /* FavoriteFacade.m */; };
+		FB0B63FA18E0FDA00026C708 /* Favorite.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB0B63F918E0FDA00026C708 /* Favorite.storyboard */; };
+		FB0B63FE18E10DC10026C708 /* MKNumberBadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB0B63FD18E10DC10026C708 /* MKNumberBadgeView.m */; };
+		FB0B640618E11E7A0026C708 /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB0B640518E11E7A0026C708 /* ListViewController.m */; };
+		FB0B640818E11EA40026C708 /* List.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB0B640718E11EA40026C708 /* List.storyboard */; };
+		FB0B640B18E11EC70026C708 /* ListFacade.m in Sources */ = {isa = PBXBuildFile; fileRef = FB0B640A18E11EC70026C708 /* ListFacade.m */; };
+		FB0B640E18E121350026C708 /* ArticleFacade.m in Sources */ = {isa = PBXBuildFile; fileRef = FB0B640D18E121350026C708 /* ArticleFacade.m */; };
+		FB0B641118E121400026C708 /* ArticleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB0B641018E121400026C708 /* ArticleViewController.m */; };
+		FB0B641318E121480026C708 /* Article.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB0B641218E121480026C708 /* Article.storyboard */; };
 		FB47E9F018DADFCF006929CB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB47E9EF18DADFCF006929CB /* Foundation.framework */; };
 		FB47E9F218DADFCF006929CB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB47E9F118DADFCF006929CB /* CoreGraphics.framework */; };
 		FB47E9F418DADFCF006929CB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB47E9F318DADFCF006929CB /* UIKit.framework */; };
@@ -20,9 +35,6 @@
 		FB47EA1418DADFCF006929CB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB47E9F318DADFCF006929CB /* UIKit.framework */; };
 		FB47EA1C18DADFCF006929CB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FB47EA1A18DADFCF006929CB /* InfoPlist.strings */; };
 		FB47EA1E18DADFCF006929CB /* beautyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FB47EA1D18DADFCF006929CB /* beautyTests.m */; };
-		FB47EA3D18DAE3DE006929CB /* PersonalTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB47EA3C18DAE3DE006929CB /* PersonalTableViewController.m */; };
-		FB47EA3F18DAE3F3006929CB /* Personal.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB47EA3E18DAE3F3006929CB /* Personal.storyboard */; };
-		FB47EA4218DAE515006929CB /* PersonalCenterFacade.m in Sources */ = {isa = PBXBuildFile; fileRef = FB47EA4118DAE515006929CB /* PersonalCenterFacade.m */; };
 		FB47EA4518DAE62B006929CB /* HomeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB47EA4418DAE62B006929CB /* HomeTableViewController.m */; };
 		FB47EA4818DAE6C4006929CB /* StoreTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB47EA4718DAE6C4006929CB /* StoreTableViewController.m */; };
 		FB47EA4A18DAE6CE006929CB /* Store.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB47EA4918DAE6CE006929CB /* Store.storyboard */; };
@@ -46,6 +58,32 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FB0B63DA18E0F5F50026C708 /* Personal.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Personal.storyboard; sourceTree = "<group>"; };
+		FB0B63DB18E0F5F50026C708 /* PersonalFacade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalFacade.h; sourceTree = "<group>"; };
+		FB0B63DC18E0F5F50026C708 /* PersonalFacade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalFacade.m; sourceTree = "<group>"; };
+		FB0B63DD18E0F5F50026C708 /* PersonalTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalTableViewController.h; sourceTree = "<group>"; };
+		FB0B63DE18E0F5F50026C708 /* PersonalTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalTableViewController.m; sourceTree = "<group>"; };
+		FB0B63EA18E0FA7F0026C708 /* SettingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingTableViewController.h; sourceTree = "<group>"; };
+		FB0B63EB18E0FA7F0026C708 /* SettingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingTableViewController.m; sourceTree = "<group>"; };
+		FB0B63ED18E0FC520026C708 /* MsgTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MsgTableViewController.h; sourceTree = "<group>"; };
+		FB0B63EE18E0FC520026C708 /* MsgTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MsgTableViewController.m; sourceTree = "<group>"; };
+		FB0B63F018E0FD6B0026C708 /* FavoriteTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoriteTableViewController.h; sourceTree = "<group>"; };
+		FB0B63F118E0FD6B0026C708 /* FavoriteTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoriteTableViewController.m; sourceTree = "<group>"; };
+		FB0B63F618E0FD900026C708 /* FavoriteFacade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoriteFacade.h; sourceTree = "<group>"; };
+		FB0B63F718E0FD900026C708 /* FavoriteFacade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoriteFacade.m; sourceTree = "<group>"; };
+		FB0B63F918E0FDA00026C708 /* Favorite.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Favorite.storyboard; sourceTree = "<group>"; };
+		FB0B63FC18E10DC10026C708 /* MKNumberBadgeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKNumberBadgeView.h; sourceTree = "<group>"; };
+		FB0B63FD18E10DC10026C708 /* MKNumberBadgeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKNumberBadgeView.m; sourceTree = "<group>"; };
+		FB0B640418E11E7A0026C708 /* ListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
+		FB0B640518E11E7A0026C708 /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
+		FB0B640718E11EA40026C708 /* List.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = List.storyboard; sourceTree = "<group>"; };
+		FB0B640918E11EC70026C708 /* ListFacade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListFacade.h; sourceTree = "<group>"; };
+		FB0B640A18E11EC70026C708 /* ListFacade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListFacade.m; sourceTree = "<group>"; };
+		FB0B640C18E121350026C708 /* ArticleFacade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArticleFacade.h; sourceTree = "<group>"; };
+		FB0B640D18E121350026C708 /* ArticleFacade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArticleFacade.m; sourceTree = "<group>"; };
+		FB0B640F18E121400026C708 /* ArticleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArticleViewController.h; sourceTree = "<group>"; };
+		FB0B641018E121400026C708 /* ArticleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArticleViewController.m; sourceTree = "<group>"; };
+		FB0B641218E121480026C708 /* Article.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Article.storyboard; sourceTree = "<group>"; };
 		FB47E9EC18DADFCF006929CB /* beauty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = beauty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB47E9EF18DADFCF006929CB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FB47E9F118DADFCF006929CB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -63,11 +101,6 @@
 		FB47EA1918DADFCF006929CB /* beautyTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "beautyTests-Info.plist"; sourceTree = "<group>"; };
 		FB47EA1B18DADFCF006929CB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FB47EA1D18DADFCF006929CB /* beautyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = beautyTests.m; sourceTree = "<group>"; };
-		FB47EA3B18DAE3DE006929CB /* PersonalTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalTableViewController.h; sourceTree = "<group>"; };
-		FB47EA3C18DAE3DE006929CB /* PersonalTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalTableViewController.m; sourceTree = "<group>"; };
-		FB47EA3E18DAE3F3006929CB /* Personal.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Personal.storyboard; sourceTree = "<group>"; };
-		FB47EA4018DAE515006929CB /* PersonalCenterFacade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalCenterFacade.h; sourceTree = "<group>"; };
-		FB47EA4118DAE515006929CB /* PersonalCenterFacade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalCenterFacade.m; sourceTree = "<group>"; };
 		FB47EA4318DAE62B006929CB /* HomeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTableViewController.h; sourceTree = "<group>"; };
 		FB47EA4418DAE62B006929CB /* HomeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTableViewController.m; sourceTree = "<group>"; };
 		FB47EA4618DAE6C4006929CB /* StoreTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoreTableViewController.h; sourceTree = "<group>"; };
@@ -111,6 +144,103 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FB0B63D918E0F5F50026C708 /* Personal */ = {
+			isa = PBXGroup;
+			children = (
+				FB0B63DA18E0F5F50026C708 /* Personal.storyboard */,
+				FB0B63DB18E0F5F50026C708 /* PersonalFacade.h */,
+				FB0B63DC18E0F5F50026C708 /* PersonalFacade.m */,
+				FB0B63DD18E0F5F50026C708 /* PersonalTableViewController.h */,
+				FB0B63DE18E0F5F50026C708 /* PersonalTableViewController.m */,
+				FB0B63EA18E0FA7F0026C708 /* SettingTableViewController.h */,
+				FB0B63EB18E0FA7F0026C708 /* SettingTableViewController.m */,
+				FB0B63ED18E0FC520026C708 /* MsgTableViewController.h */,
+				FB0B63EE18E0FC520026C708 /* MsgTableViewController.m */,
+			);
+			path = Personal;
+			sourceTree = "<group>";
+		};
+		FB0B63E218E0F69A0026C708 /* Article */ = {
+			isa = PBXGroup;
+			children = (
+				FB0B640C18E121350026C708 /* ArticleFacade.h */,
+				FB0B640D18E121350026C708 /* ArticleFacade.m */,
+				FB0B640F18E121400026C708 /* ArticleViewController.h */,
+				FB0B641018E121400026C708 /* ArticleViewController.m */,
+				FB0B641218E121480026C708 /* Article.storyboard */,
+			);
+			path = Article;
+			sourceTree = "<group>";
+		};
+		FB0B63E318E0F69A0026C708 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				FB0B640418E11E7A0026C708 /* ListViewController.h */,
+				FB0B640518E11E7A0026C708 /* ListViewController.m */,
+				FB0B640718E11EA40026C708 /* List.storyboard */,
+				FB0B640918E11EC70026C708 /* ListFacade.h */,
+				FB0B640A18E11EC70026C708 /* ListFacade.m */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		FB0B63E418E0F69A0026C708 /* Address */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Address;
+			sourceTree = "<group>";
+		};
+		FB0B63E518E0F69A0026C708 /* Comment */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Comment;
+			sourceTree = "<group>";
+		};
+		FB0B63E618E0F69A0026C708 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				FB0B63FB18E10DC10026C708 /* MKNumberBadgeView */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		FB0B63E718E0F69A0026C708 /* Favorite */ = {
+			isa = PBXGroup;
+			children = (
+				FB0B63F018E0FD6B0026C708 /* FavoriteTableViewController.h */,
+				FB0B63F118E0FD6B0026C708 /* FavoriteTableViewController.m */,
+				FB0B63F618E0FD900026C708 /* FavoriteFacade.h */,
+				FB0B63F718E0FD900026C708 /* FavoriteFacade.m */,
+				FB0B63F918E0FDA00026C708 /* Favorite.storyboard */,
+			);
+			path = Favorite;
+			sourceTree = "<group>";
+		};
+		FB0B63E818E0F69A0026C708 /* Order */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Order;
+			sourceTree = "<group>";
+		};
+		FB0B63E918E0F69A0026C708 /* Product */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Product;
+			sourceTree = "<group>";
+		};
+		FB0B63FB18E10DC10026C708 /* MKNumberBadgeView */ = {
+			isa = PBXGroup;
+			children = (
+				FB0B63FC18E10DC10026C708 /* MKNumberBadgeView.h */,
+				FB0B63FD18E10DC10026C708 /* MKNumberBadgeView.m */,
+			);
+			path = MKNumberBadgeView;
+			sourceTree = "<group>";
+		};
 		FB47E9E318DADFCE006929CB = {
 			isa = PBXGroup;
 			children = (
@@ -144,14 +274,17 @@
 		FB47E9F518DADFCF006929CB /* beauty */ = {
 			isa = PBXGroup;
 			children = (
-				FB47EA4E18DBD367006929CB /* Common */,
-				FB47EA3218DAE3B8006929CB /* AddressManager */,
-				FB47EA3318DAE3B8006929CB /* ArticleDetail */,
-				FB47EA3418DAE3B8006929CB /* ArticleList */,
+				FB0B63E218E0F69A0026C708 /* Article */,
+				FB0B63E318E0F69A0026C708 /* List */,
+				FB0B63E418E0F69A0026C708 /* Address */,
+				FB0B63E518E0F69A0026C708 /* Comment */,
+				FB0B63E618E0F69A0026C708 /* Common */,
+				FB0B63E718E0F69A0026C708 /* Favorite */,
+				FB0B63E818E0F69A0026C708 /* Order */,
+				FB0B63E918E0F69A0026C708 /* Product */,
+				FB0B63D918E0F5F50026C708 /* Personal */,
 				FB47EA3518DAE3B8006929CB /* Cart */,
-				FB47EA3618DAE3B8006929CB /* Goods */,
 				FB47EA3718DAE3B8006929CB /* Login */,
-				FB47EA3818DAE3B8006929CB /* PersonalCenter */,
 				FB47EA3918DAE3B8006929CB /* Search */,
 				FB47EA3A18DAE3B8006929CB /* Store */,
 				FB47EA2718DAE054006929CB /* Home */,
@@ -202,27 +335,6 @@
 			name = Home;
 			sourceTree = "<group>";
 		};
-		FB47EA3218DAE3B8006929CB /* AddressManager */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = AddressManager;
-			sourceTree = "<group>";
-		};
-		FB47EA3318DAE3B8006929CB /* ArticleDetail */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ArticleDetail;
-			sourceTree = "<group>";
-		};
-		FB47EA3418DAE3B8006929CB /* ArticleList */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ArticleList;
-			sourceTree = "<group>";
-		};
 		FB47EA3518DAE3B8006929CB /* Cart */ = {
 			isa = PBXGroup;
 			children = (
@@ -235,30 +347,11 @@
 			path = Cart;
 			sourceTree = "<group>";
 		};
-		FB47EA3618DAE3B8006929CB /* Goods */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Goods;
-			sourceTree = "<group>";
-		};
 		FB47EA3718DAE3B8006929CB /* Login */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Login;
-			sourceTree = "<group>";
-		};
-		FB47EA3818DAE3B8006929CB /* PersonalCenter */ = {
-			isa = PBXGroup;
-			children = (
-				FB47EA4018DAE515006929CB /* PersonalCenterFacade.h */,
-				FB47EA4118DAE515006929CB /* PersonalCenterFacade.m */,
-				FB47EA3B18DAE3DE006929CB /* PersonalTableViewController.h */,
-				FB47EA3C18DAE3DE006929CB /* PersonalTableViewController.m */,
-				FB47EA3E18DAE3F3006929CB /* Personal.storyboard */,
-			);
-			path = PersonalCenter;
 			sourceTree = "<group>";
 		};
 		FB47EA3918DAE3B8006929CB /* Search */ = {
@@ -283,13 +376,6 @@
 				FB47EA4918DAE6CE006929CB /* Store.storyboard */,
 			);
 			path = Store;
-			sourceTree = "<group>";
-		};
-		FB47EA4E18DBD367006929CB /* Common */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -369,12 +455,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB47EA0B18DADFCF006929CB /* Images.xcassets in Resources */,
+				FB0B640818E11EA40026C708 /* List.storyboard in Resources */,
 				FB47E9FA18DADFCF006929CB /* InfoPlist.strings in Resources */,
+				FB0B641318E121480026C708 /* Article.storyboard in Resources */,
+				FB0B63FA18E0FDA00026C708 /* Favorite.storyboard in Resources */,
 				FB47EA4A18DAE6CE006929CB /* Store.storyboard in Resources */,
-				FB47EA3F18DAE3F3006929CB /* Personal.storyboard in Resources */,
 				FB47EA5318DBD792006929CB /* Search.storyboard in Resources */,
 				FB47EA0318DADFCF006929CB /* Main.storyboard in Resources */,
 				FB47EA5D18DBDEC4006929CB /* Cart.storyboard in Resources */,
+				FB0B63DF18E0F5F50026C708 /* Personal.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,14 +483,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB47EA0018DADFCF006929CB /* AppDelegate.m in Sources */,
+				FB0B63EF18E0FC520026C708 /* MsgTableViewController.m in Sources */,
 				FB47EA4518DAE62B006929CB /* HomeTableViewController.m in Sources */,
 				FB47EA6018DBDEED006929CB /* CartFacade.m in Sources */,
+				FB0B63F818E0FD900026C708 /* FavoriteFacade.m in Sources */,
+				FB0B641118E121400026C708 /* ArticleViewController.m in Sources */,
+				FB0B63E118E0F5F50026C708 /* PersonalTableViewController.m in Sources */,
+				FB0B63EC18E0FA7F0026C708 /* SettingTableViewController.m in Sources */,
+				FB0B640618E11E7A0026C708 /* ListViewController.m in Sources */,
+				FB0B63E018E0F5F50026C708 /* PersonalFacade.m in Sources */,
 				FB47EA5818DBD7B8006929CB /* SearchFacade.m in Sources */,
 				FB47E9FC18DADFCF006929CB /* main.m in Sources */,
 				FB47EA5118DBD777006929CB /* SearchTableViewController.m in Sources */,
-				FB47EA4218DAE515006929CB /* PersonalCenterFacade.m in Sources */,
 				FB47EA4D18DAE6DF006929CB /* StoreFacade.m in Sources */,
-				FB47EA3D18DAE3DE006929CB /* PersonalTableViewController.m in Sources */,
+				FB0B640E18E121350026C708 /* ArticleFacade.m in Sources */,
+				FB0B63F218E0FD6B0026C708 /* FavoriteTableViewController.m in Sources */,
+				FB0B63FE18E10DC10026C708 /* MKNumberBadgeView.m in Sources */,
+				FB0B640B18E11EC70026C708 /* ListFacade.m in Sources */,
 				FB47EA4818DAE6C4006929CB /* StoreTableViewController.m in Sources */,
 				FB47EA5B18DBDEB7006929CB /* CartTableViewController.m in Sources */,
 			);
@@ -610,6 +708,7 @@
 				FB47EA2318DADFCF006929CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FB47EA2418DADFCF006929CB /* Build configuration list for PBXNativeTarget "beautyTests" */ = {
 			isa = XCConfigurationList;
@@ -618,6 +717,7 @@
 				FB47EA2618DADFCF006929CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

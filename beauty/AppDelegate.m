@@ -18,8 +18,9 @@
     
     UITabBarController *tabBarController = (UITabBarController *)self.window.rootViewController;
     UINavigationController *navController = tabBarController.viewControllers[sender.tag];
-    
+//    UIViewController *presentingController = [navController viewControllers][0];
     [navController pushViewController:controller animated:YES];
+//    [presentingController presentViewController:controller animated:NO completion:nil];
 }
 - (void)addSearchButtonForViewController:(UIViewController *)navController withTag:(NSInteger)tag
 {
@@ -55,6 +56,7 @@
     
     UIBarButtonItem *buttonItem = [[UIBarButtonItem alloc] initWithCustomView:cartButton];
     controller.navigationItem.rightBarButtonItem = buttonItem;
+    
 }
 
 - (void)setupTheTabBarViewController
@@ -63,7 +65,7 @@
     
     NSMutableArray *controllers = [NSMutableArray arrayWithArray:tabBarController.viewControllers];
     
-    [controllers addObject:[PersonalCenterFacade instantiateInitialViewController]];
+    [controllers addObject:[PersonalFacade instantiateInitialViewController]];
     [controllers addObject:[StoreFacade instantiateInitialViewController]];
     
     tabBarController.viewControllers = controllers;
@@ -81,13 +83,12 @@
     
     // add Search Button
     [self addSearchButtonForViewController:tabBarController.viewControllers[0] withTag:0];
-    [self addSearchButtonForViewController:tabBarController.viewControllers[1] withTag:1];
     [self addSearchButtonForViewController:tabBarController.viewControllers[2] withTag:2];
     
     // add Cart Button
     [self addCartButtonForViewController:tabBarController.viewControllers[0] withTag:0];
-    [self addCartButtonForViewController:tabBarController.viewControllers[1] withTag:1];
     [self addCartButtonForViewController:tabBarController.viewControllers[2] withTag:2];
+    
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions

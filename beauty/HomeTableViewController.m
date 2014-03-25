@@ -7,6 +7,7 @@
 //
 
 #import "HomeTableViewController.h"
+#import "MKNumberBadgeView.h"
 
 @interface HomeTableViewController ()
 
@@ -23,6 +24,46 @@
     return self;
 }
 
+- (void)removeTheBadgeView
+{
+    for (UIView *subview in self.navigationController.navigationBar.subviews) {
+        if ([subview isKindOfClass:[MKNumberBadgeView class]]) {
+            [subview removeFromSuperview];
+        }
+    }
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    // add badge number as the number of product in cart
+    
+    [self removeTheBadgeView];
+    
+    
+    int num = 3;//[CartFacade numberOfProductsInCart];
+    
+    MKNumberBadgeView *numberBadge = [[MKNumberBadgeView alloc] initWithFrame:CGRectMake(285, 0, 40, 40)];
+    numberBadge.hideWhenZero = YES;
+    numberBadge.font = [UIFont systemFontOfSize:10];
+    numberBadge.shadow = NO;
+    numberBadge.shine = NO;
+    numberBadge.pad = 1;
+    numberBadge.strokeColor = numberBadge.fillColor;
+    numberBadge.value = num;
+    
+    
+    [self.navigationController.navigationBar addSubview:numberBadge];
+    
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    
+    [self removeTheBadgeView];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -32,6 +73,9 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -44,76 +88,42 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
-    // Return the number of rows in the section.
-    return 0;
+    return 4;
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    if (indexPath.row == 0) {
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"HomeBannerCell" forIndexPath:indexPath];
+        return cell;
+    }else if (indexPath.row == 1) {
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"HomeArticleCell" forIndexPath:indexPath];
+        return cell;
+    }else if (indexPath.row == 2) {
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"HomeHotHeaderCell" forIndexPath:indexPath];
+        return cell;
+    }else if (indexPath.row == 3) {
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"HomeHotDetailCell" forIndexPath:indexPath];
+        return cell;
+    }
+    
     
     // Configure the cell...
     
-    return cell;
+    return nil;
 }
-*/
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
+- (IBAction)ArticleCataButtonPressed:(UIButton *)sender {    
+    UIViewController *controller = [ListFacade instantiateInitialViewControllerWithType:sender.tag];
+    [self.navigationController pushViewController:controller animated:YES];
 }
-*/
 
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
 
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
-{
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
